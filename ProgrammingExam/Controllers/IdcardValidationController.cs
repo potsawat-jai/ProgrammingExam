@@ -28,7 +28,7 @@ namespace ProgrammingExam.Controllers
 
             if (chkcitizen)
             {
-                string[] idcard = id.citizenid.Remove(id.citizenid.Length - 1).ToCharArray().Select(c => c.ToString()).ToArray();
+                string[] idcard = id.citizenid.ToCharArray().Select(c => c.ToString()).ToArray();
                 foreach (var s in idcard)
                 {
                     i++;
